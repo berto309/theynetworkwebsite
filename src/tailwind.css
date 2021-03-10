@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .header {
+        height:auto;
+    }
+
+    .header nav {
+        background: rgba(0,0,0,0.2);
+    }
+
+    .video-cta {
+        height: auto;
+    }
+
+    @media(min-width:1024px){
+        .header {
+            height: 762px;
+        }
+
+        .video-cta {
+            height: 582px;
+        }
+    }
+}

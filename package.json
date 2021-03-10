@@ -1,0 +1,23 @@
+{
+  "name": "theynetworkwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/tailwind.css -o dist/style.css",
+    "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "autoprefixer": "^10.2.4",
+    "cross-env": "^7.0.3",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3",
+    "win-node-env": "^0.4.0"
+  }
+}
