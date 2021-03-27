@@ -7,83 +7,207 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" type="text/css">
   <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="">
   <title>They Network - We make it happen</title>
 </head>
 
 <body class="antialiased bg-brand">
- 
-  <header class="header  lg:relative lg:overflow-hidden">
-    
-    <nav class=" md:p-3 py-2 px-3 z-10">
-      <div class="container mx-auto md:flex block flex-wrap items-center justify-start">
-        <div class="flex-1 flex items-center justify-between">
-          <div>
-            <a href="#"><img src="./assets/images/logo.jpg" class="w-11 h-11  object-center" alt="theynetwork"></a>
-          </div>
-          <button data-menu-toggle class="lg:hidden block pr-1">
-            <svg class="fill-current text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              viewBox="0 0 20 20">
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-        <ul data-menu class="lg:flex hidden flex-wrap items-center justify-start text-white">
-          <li class="md:px-6 py-2">
-            <a href="#" class="text-brand">Home</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">About Us</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">Services</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">Works</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">Blog</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">Team</a>
-          </li>
-          <li class="md:px-6 py-2">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
 
-    <!-- from mobile screen size to tablet screen size -->
-    <!-- <div class="block lg:hidden  inset-0 z-negative  opacity-100">
+  <div class="pt-16 smd:pt-16 lg:pt-0">
+    <header class="header lg:relative lg:overflow-hidden">
+
+      <nav class="bg-brand bg-opacity-75 md:p-3 py-2 px-3 fixed inset-x-0 top-0" style="z-index: 100;">
+        <div class="container mx-auto md:flex block flex-wrap items-center justify-start">
+          <div class="flex-1 flex items-center justify-between">
+            <div>
+              <a href="#"><img src="./assets/images/logo.jpg" class="w-11 h-11  object-center" alt="theynetwork"></a>
+            </div>
+            <button class="lg:hidden block pr-1" id="menu-button">
+              <svg class="fill-current text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul class="lg:flex lg:flex-row  hidden  flex-wrap items-center justify-start text-white">
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#">Home</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#about-us">About Us</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#services">Services</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#works">Works</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#blog">Blog</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#meet-the-team">Meet The Team</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#contact-us">Contact Us</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="./login.html" class="inline-block bg-theynetwork hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-2 
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">Login</a>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="hidden lg:hidden not-sr-only" id="mobile-menu">
+          <ul
+            class="block lg:hidden h-screen w-full text-center text-2xl flex-wrap items-center justify-start text-white">
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#">Home</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#about-us">About Us</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#services">Services</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#works">Works</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#blog">Blog</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#meet-the-team">Meet The Team</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="#contact-us">Contact Us</a>
+                <span
+                  class="absolute w-full h-1 rounded-sm  bg-red-600 -bottom-1 left-0 transform scale-x-0 group-hover:scale-x-100 transition ease-bloop duration-300"></span>
+              </span>
+            </li>
+            <li class="md:px-6 py-2">
+              <span class="relative group">
+                <a href="./login.html" class="inline-block bg-theynetwork hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-2 
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">Login</a>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- from mobile screen size to tablet screen size -->
+      <!-- <div class="block lg:hidden  inset-0 z-negative  opacity-100">
       <video src="./assets/videos/they-network-video.mp4" autoplay muted loop type="video/mp4"
         class="object-cover w-full "></video>
     </div> -->
 
 
-    <!-- desktop screen size and above -->
-    <!-- <div class="hidden lg:block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
+      <!-- desktop screen size and above -->
+      <!-- <div class="hidden lg:block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
       <video src="./assets/videos/they-network-video.mp4" autoplay muted loop type="video/mp4"
         class="lg:object-cover lg:w-full lg:h-full"></video>
     </div> -->
 
 
-    <!-- <div class="block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
+      <!-- <div class="block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
       <video muted autoplay loop  src="./assets/videos/they-network-video.mp4" type="video/mp4"
         class="lg:object-cover lg:w-full lg:h-full"></video>
     </div> -->
 
-    <div class="block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
-    <video muted loop autoplay>
-      <source src="assets/videos/they-network-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+      <div class="block lg:absolute lg:inset-0 lg:z-negative lg:opacity-100 ">
+        <video autoplay loop playsinline muted class="xl:object-cover lg:w-full lg:h-full">
+          <source src="assets/videos/they-network-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-   
-    <div class="bg-black  lg:bg-opacity-0 lg:container mx-auto lg:mt-64 lg:flex lg:justify-end lg:px-16 px-6 py-16">
+
+      <div
+        class="bg-black lg:hidden  xl:bg-opacity-0 xl:container  mx-auto xl:mt-64 xl:flex xl:justify-end xl:pt-2 xl:pb-16  px-6 py-16">
+        <div class="md:pl-8 border-none md:border-l border-white">
+          <h1 class="text-white lg:text-yellow-400 md:text-4xl text-2xl font-bold font-sans m-0 md:leading-none">Let us
+            be
+            the <span class="text-white ">vehicle</span> to drive your products.</h1>
+          <p class="text-white m-3   text-md md:max-w-lg w-full md:my-4  md:text-lg">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Quo laboriosam quae mollitia voluptatibus placeat. Libero adipisci ipsam,
+            nobis,
+            corrupti nesciunt id beatae laudantium quis dolorum aliquam impedit quae recusandae ad.</p>
+          <div class="mt-4 lg:text-left text-center">
+            <a href="#works" class="inline-block bg-theynetwork hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3 
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">Check out our Works</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </header>
+    <div class="bg-black hidden xl:hidden lg:block lg:bg-opacity-0 xl:px-16 px-6 pb-16 relative -top-8">
       <div class="md:pl-8 border-none md:border-l border-white">
         <h1 class="text-white lg:text-yellow-400 md:text-4xl text-2xl font-bold font-sans m-0 md:leading-none">Let us be
           the <span class="text-white ">vehicle</span> to drive your products.</h1>
@@ -91,217 +215,709 @@
           consectetur adipisicing elit. Quo laboriosam quae mollitia voluptatibus placeat. Libero adipisci ipsam, nobis,
           corrupti nesciunt id beatae laudantium quis dolorum aliquam impedit quae recusandae ad.</p>
         <div class="mt-4 lg:text-left text-center">
-          <a href="#" class="inline-block bg-red-700 hover:bg-red-600 
+          <a href="#works" class="inline-block bg-theynetwork hover:bg-red-600 
           lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3 
           active:bg-gray-800
           text-white rounded-lg uppercase tracking-wide">Check out our Works</a>
         </div>
       </div>
     </div>
-  
-  </header>
-  <div class="py-12 bg-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">About Us</h2>
-        <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Who we are
-        </p>
-        <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
-          Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-          in accusamus quism.
-        </p>
-      </div>
-    </div>
-  </div>
+    <div class="py-12 bg-orange-100" id="#about-us">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">About Us</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              Who we are
+            </span>
 
-  <div class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Services</h2>
-        <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Check out services we offer
-        </p>
-        <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
-          Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-          in accusamus quisquam.
-        </p>
-      </div>
-
-      <div class="mt-10">
-        <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-          <div class="flex rounded-md shadow-xl p-2 ">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-               Social
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem
-                dolorum officiis porro impedit repudiandae sunt eos minima quibusdam. consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-              </dd>
-            </div>
-          </div>
-
-          <div class="flex rounded-md shadow-xl p-2 ">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                Easy advertising blah blah
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </dd>
-            </div>
-          </div>
-
-          <div class="flex rounded-md shadow-xl p-2 ">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-               Easy Advert
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </dd>
-            </div>
-          </div>
-
-          <div class="flex rounded-md shadow-xl p-2 ">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-               Illustration
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </dd>
-            </div>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="py-12 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">Our Works</h2>
-        <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Discover great products we have made.
-        </p>
-        <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
-          Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-          in accusamus quisquam.
-        </p>
-        <div class="mt-10 max-w-6xl lg:max-w-full text-xl text-gray-500 space-x-1 space-y-1">
-          <a href="#"
-            class="inline-flex text-sm  bg-fuchsia-400 hover:bg-amber-200 p-2 text-white-200 rounded-xl">All</a>
-          <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Web Designl</a>
-          <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Branding</a>
-          <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Graphic
-            Design</a>
-          <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Motion
-            Graphics</a>
-          <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Web Designl</a>
-          <a href="#"
-            class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">mdsslfacdolorem.</a>
-          <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Marketing</a>
-          <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Examples</a>
-          <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">3D</a>
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
+            Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+            in accusamus quism.
+          </p>
         </div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="relative">
-        <h1
-          class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
-          Branding</h1>
-        <a href="#">
-          <img src="./assets/images/positivity.png" alt="" class="object-center h-80 w-full hover:opacity-100 opacity-60">
-        </a>
-        <div class="bg-red-700 text-white text-center leading-loose">Company Name here</div>
-      </div>
-      <div class="relative">
-        <h1
-          class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
-          Web Design</h1>
-        <a href="#">
-          <img src="./assets/images/positivity.png" alt="" class="object-center h-80 w-full hover:opacity-100 opacity-60">
-        </a>
-        <div class="bg-red-700 text-white text-center leading-loose">Company Name here</div>
-      </div>
-      <div class="relative">
-        <h1
-          class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
-          3D</h1>
-        <a href="#">
-          <img src="./assets/images/positivity.png" alt="" class="object-center h-80 w-full hover:opacity-100 opacity-60">
-        </a>
-        <div class="bg-red-700 text-white text-center leading-loose">Company Name here</div>
-      </div>
-      <div class="relative">
-        <h1
-          class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
-          Social Media</h1>
-        <a href="#">
-          <img src="./assets/images/positivity.png" alt="" class="object-center h-80 w-full hover:opacity-100 opacity-60">
-        </a>
-        <div class="bg-red-700 text-white text-center leading-loose">Company Name here</div>
+
+    <div class="py-12 bg-white" id="services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Services</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              Check out services we offer
+            </span>
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
+            Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+            in accusamus quisquam.
+          </p>
+        </div>
+
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div class="flex rounded-md shadow-xl p-2 ">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <dt class="text-lg leading-6 font-medium text-gray-900">
+                  Social
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem
+                  dolorum officiis porro impedit repudiandae sunt eos minima quibusdam. consectetur adipisicing elit.
+                  Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                </dd>
+              </div>
+            </div>
+
+            <div class="flex rounded-md shadow-xl p-2 ">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <dt class="text-lg leading-6 font-medium text-gray-900">
+                  Easy advertising blah blah
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                  iste dolor cupiditate blanditiis ratione.
+                </dd>
+              </div>
+            </div>
+
+            <div class="flex rounded-md shadow-xl p-2 ">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <dt class="text-lg leading-6 font-medium text-gray-900">
+                  Easy Advert
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                  iste dolor cupiditate blanditiis ratione.
+                </dd>
+              </div>
+            </div>
+
+            <div class="flex rounded-md shadow-xl p-2 ">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <dt class="text-lg leading-6 font-medium text-gray-900">
+                  Illustration
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                  iste dolor cupiditate blanditiis ratione.
+                </dd>
+              </div>
+            </div>
+          </dl>
+        </div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto">
-      <div class="mt-4 text-center">
-        <a href="#" class="inline-block bg-red-700 hover:bg-red-600 
+
+    <div class="py-12 bg-gray-50" id="works">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">Our Works</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              Discover great products we have made.
+            </span>
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
+            Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+            in accusamus quisquam.
+          </p>
+          <div class="mt-10 max-w-6xl lg:max-w-full text-xl text-gray-500 space-x-1 space-y-1">
+            <a href="#"
+              class="inline-flex text-sm  bg-fuchsia-400 hover:bg-amber-200 p-2 text-white-200 rounded-xl">All</a>
+            <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Web
+              Designl</a>
+            <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Branding</a>
+            <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Graphic
+              Design</a>
+            <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Motion
+              Graphics</a>
+            <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Web
+              Designl</a>
+            <a href="#"
+              class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">mdsslfacdolorem.</a>
+            <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Marketing</a>
+            <a href="#" class="inline-flex text-sm  bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">Examples</a>
+            <a href="#" class="inline-flex text-sm bg-brand hover:bg-amber-200 p-2 text-white rounded-xl">3D</a>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="relative">
+          <h1
+            class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
+            Branding</h1>
+          <a href="#">
+            <img src="./assets/images/positivity.png" alt=""
+              class="object-center h-80 w-full hover:opacity-100 opacity-60">
+          </a>
+          <div class="bg-theynetwork text-white text-center leading-loose">Company Name here</div>
+        </div>
+        <div class="relative">
+          <h1
+            class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-red-700 text-lg font-semibold text-white">
+            Web Design</h1>
+          <a href="#">
+            <img src="./assets/images/positivity.png" alt=""
+              class="object-center h-80 w-full hover:opacity-100 opacity-60">
+          </a>
+          <div class="bg-theynetwork text-white text-center leading-loose">Company Name here</div>
+        </div>
+        <div class="relative">
+          <h1
+            class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-theynetwork text-lg font-semibold text-white">
+            3D</h1>
+          <a href="#">
+            <img src="./assets/images/positivity.png" alt=""
+              class="object-center h-80 w-full hover:opacity-100 opacity-60">
+          </a>
+          <div class="bg-theynetwork text-white text-center leading-loose">Company Name here</div>
+        </div>
+        <div class="relative">
+          <h1
+            class="absolute -top-1 -right-1 p-1.5 transform rotate-6 leading-none z-50 bg-theynetwork text-lg font-semibold text-white">
+            Social Media</h1>
+          <a href="#">
+            <img src="./assets/images/positivity.png" alt=""
+              class="object-center h-80 w-full hover:opacity-100 opacity-60">
+          </a>
+          <div class="bg-theynetwork text-white text-center leading-loose">Company Name here</div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto">
+        <div class="mt-4  text-center">
+          <a href="#" class="inline-block bg-theynetwork hover:bg-red-600 
           lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3 
           active:bg-gray-800
           text-white rounded-lg uppercase tracking-wide">Check out our Works</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-12 bg-gray-50" id="blog">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">Blog</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              Check out our blog
+            </span>
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
+            Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+            in accusamus quism.
+          </p>
+        </div>
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          <a href="#" class="lg:hover:opacity-90">
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <div>
+                <img src="assets/images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg" alt=""
+                  class="w-full h-48 object-cover">
+                <div class="p-6 bg-orange-50">
+                  <p class="text-sm leading-5 font-medium text-red-600">Blog</p>
+                  <p class="text-xs leading-5 font-medium text-gray-600">Mar 28,2021</p>
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">Boosting your bussiness with the
+                    befitting ad</h3>
+                  <p class="text-base leading-6  mt-3 text-gray-600">Dolorum ab et placeat nam aut dolor, consequuntur
+                    ratione quo, eaque eius labore suscipit laudantium magnam! Quia!</p>
+                  <div class="mt-6">
+                    <div class="flex justify-between ml-2">
+                      <div>
+                        <p class="text-sm leading-5 font-medium text-orange-400 ">Ava O'Brien
+                          <p class="text-lightblue-700">9 min read</p>
+                        </p>
+                      </div>
+                      <div class="h-7 w-7">
+                        <svg class="fill-current text-red-600 w-8 h-8 m-0" fill="currentColor" class="w-4 h-4">
+                          <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="lg:hover:opacity-90">
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <div>
+                <img src="assets/images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg" alt=""
+                  class="w-full h-48 object-cover">
+                <div class="p-6 bg-orange-50">
+                  <p class="text-sm leading-5 font-medium text-red-600">Blog</p>
+                  <p class="text-xs leading-5 font-medium text-gray-600">Mar 28,2021</p>
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">Boosting your bussiness with the
+                    befitting ad</h3>
+                  <p class="text-base leading-6  mt-3 text-gray-600">Dolorum ab et placeat nam aut dolor, consequuntur
+                    ratione quo, eaque eius labore suscipit laudantium magnam! Quia!</p>
+                  <div class="mt-6">
+                    <div class="flex justify-between ml-2">
+                      <div>
+                        <p class="text-sm leading-5 font-medium text-orange-400">Ava O'Brien
+                          <p class="text-lightblue-700">9 min read</p>
+                        </p>
+                      </div>
+                      <div class="h-7 w-7">
+                        <svg class="fill-current text-red-600 w-8 h-8 m-0" fill="currentColor" class="w-4 h-4">
+                          <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="lg:hover:opacity-90">
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <div>
+                <img src="assets/images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg" alt=""
+                  class="w-full h-48 object-cover">
+                <div class="p-6 bg-orange-50">
+                  <p class="text-sm leading-5 font-medium text-red-600">Blog</p>
+                  <p class="text-xs leading-5 font-medium text-gray-600">Mar 28,2021</p>
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">Boosting your bussiness with the
+                    befitting ad</h3>
+                  <p class="text-base leading-6  mt-3 text-gray-600">Dolorum ab et placeat nam aut dolor, consequuntur
+                    ratione quo, eaque eius labore suscipit laudantium magnam! Quia!</p>
+                  <div class="mt-6">
+                    <div class="flex justify-between ml-2">
+                      <div>
+                        <p class="text-sm leading-5 font-medium text-orange-400">Ava O'Brien
+                          <p class="text-lightblue-700">9 min read</p>
+                        </p>
+                      </div>
+                      <div class="h-7 w-7">
+                        <svg class="fill-current text-red-600 w-8 h-8 m-0" fill="currentColor" class="w-4 h-4">
+                          <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="lg:hover:opacity-90">
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <div>
+                <img src="assets/images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg" alt=""
+                  class="w-full h-48 object-cover">
+                <div class="p-6 bg-orange-50">
+                  <p class="text-sm leading-5 font-medium text-red-600">Blog</p>
+                  <p class="text-xs leading-5 font-medium text-gray-600">Mar 28,2021</p>
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+
+                    Boosting your bussiness with the befitting ad</h3>
+
+
+                  <p class="text-base leading-6  mt-3 text-gray-600">Dolorum ab et placeat nam aut dolor, consequuntur
+                    ratione quo, eaque eius labore suscipit laudantium magnam! Quia!</p>
+                  <div class="mt-6">
+                    <div class="flex justify-between ml-2">
+                      <div>
+                        <p class="text-sm leading-5 font-medium text-orange-400">Ava O'Brien
+                          <p class="text-lightblue-700">9 min read</p>
+                        </p>
+                      </div>
+                      <div class="h-7 w-7">
+                        <svg class="fill-current text-red-600 w-8 h-8 m-0" fill="currentColor" class="w-4 h-4">
+                          <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="lg:hover:opacity-90">
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <div>
+                <img src="assets/images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg" alt=""
+                  class="w-full h-48 object-cover">
+                <div class="p-6 bg-orange-50">
+                  <p class="text-sm leading-5 font-medium text-red-600">Blog</p>
+                  <p class="text-xs leading-5 font-medium text-gray-600">Mar 28,2021</p>
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                    Boosting your bussiness with the
+                    befitting ad
+                  </h3>
+                  <p class="text-base leading-6  mt-3 text-gray-600">Dolorum ab et placeat nam aut dolor, consequuntur
+                    ratione quo, eaque eius labore suscipit laudantium magnam! Quia!</p>
+                  <div class="mt-6">
+                    <div class="flex justify-between ml-2">
+                      <div>
+                        <p class="text-sm leading-5 font-medium text-orange-400">Ava O'Brien
+                          <p class="text-lightblue-700">9 min read</p>
+                        </p>
+                      </div>
+                      <div class="h-7 w-7">
+                        <svg class="fill-current text-red-600 w-8 h-8 m-0" fill="currentColor" class="w-4 h-4">
+                          <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="max-w-7xl mx-auto mt-10">
+          <div class="mt-4 text-center">
+            <a href="#" class="inline-block bg-theynetwork hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3 
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">See all posts</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="py-12 bg-gray-50" id="meet-the-team">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">Meet the Team</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              The wonderful team behind our success
+            </span>
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-center text-gray-500 lg:mx-auto">
+            Lorem blujs ldksaum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+            in accusamus quisquam.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center bg-cyan-100 relative">
+          <a href="#"><img class="mb-3 rounded-full mx-auto h-32 w-32"
+              src="http://codenawis.com/wp-content/uploads/2020/08/images.jpg" /></a>
+
+          <a href="#" class="hover:text-indigo-500 text-gray-900 font-semibold">Nat</a>
+          <p class="text-gray-500 uppercase text-sm">Web Developer</p>
+
+          <div class="absolute inset-0 text-left text-sm p-2 hidden hover:block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut laboriosam ducimus sapiente dolor
+            suscipit
+            numquam natus?
+          </div>
+
+        </div>
+        <div class="text-center">
+          <a href="#"><img class="mb-3 rounded-full mx-auto h-32 w-32"
+              src="http://codenawis.com/wp-content/uploads/2020/08/images.jpg" /></a>
+
+          <a href="#" class="hover:text-indigo-500 text-gray-900 font-semibold">Gucci</a>
+          <p class="text-gray-500 uppercase text-sm">Web Developer</p>
+
+        </div>
+        <div class="text-center">
+          <a href="#"><img class="mb-3 rounded-full mx-auto h-32 w-32"
+              src="http://codenawis.com/wp-content/uploads/2020/08/images.jpg" /></a>
+
+          <a href="#" class="hover:text-indigo-500 text-gray-900 font-semibold">Hessington</a>
+          <p class="text-gray-500 uppercase text-sm">Web Developer</p>
+        </div>
+        <div class="text-center">
+          <a href="#"><img class="mb-3 rounded-full mx-auto h-32 w-32"
+              src="http://codenawis.com/wp-content/uploads/2020/08/images.jpg" /></a>
+
+          <a href="#" class="hover:text-indigo-500 text-gray-900 font-semibold">Mehdi</a>
+          <p class="text-gray-500 uppercase text-sm">Web Developer</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-200 py-12" id="contact-us">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-center text-red-600 font-semibold tracking-wide uppercase">Contact</h2>
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="text-transparent bg-gradient-to-r bg-clip-text from-gray-800 to-theynetwork">
+              Get in touch
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-8">
+        <div
+          class="max-w-7xl  px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row space-y-6 md:space-x-6 md:space-y-0 bg-gray-600 w-full p-8 sm:p-12 rounded-xl shadow-xl text-white mx-auto">
+          <div class="flex flex-col md:flex-1 space-y-8 justify-between">
+            <div>
+              <h1 class="text-4xl font-bold tracking-wide">Contact Us</h1>
+              <p class="pt-2 text-cyan-100 text-sm">You are an e-mail, a chat or a phone call away from driving your
+                bussiness to the next level. Trust us.</p>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="inline-flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-green-400 text-xl">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span>(+233) 54 798 2256</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-green-400 text-xl">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <span>hey@theynetwork.com</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-green-400 text-xl">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span>Your location</span>
+              </div>
+
+            </div>
+            <div class="flex space-x-4 text-lg">
+              <a href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-6 h-6 text-green-400">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-6 h-6 text-green-400">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+                </svg>
+              </a>
+              <a href="#">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-6 h-6 text-green-400">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="bg-white shadow-lg p-8 rounded-lg md:w-96">
+              <form action="#" method="POST" class="flex flex-col space-y-4">
+                <div class="space-y-4">
+                  <div>
+                    <div>
+                      <label for="name" class="text-sm text-black">Your name</label>
+                    </div>
+                    <div>
+                      <input type="text" name="name" placeholder="Your name" id="name"
+                        class="ring-1 ring-cyan-300 text-gray-800 w-full rounded-md px-4 py-2 mt-2 focus:outline-none outline-none focus:ring-2 focus:ring-green-400"
+                        required>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <label for="email" class="text-sm text-black">E-mail Address</label>
+                    </div>
+                    <div>
+                      <input type="email" name="email" placeholder="Your email address" id="email"
+                        class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full"
+                        required>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <label for="message" class="text-sm text-gray-800">Message</label>
+                    </div>
+                    <div>
+                      <textarea name="message" rows="4" placeholder="Your Message" id="message"
+                        class="ring-1 ring-cyan-300 text-gray-800 w-full rounded-md px-4 py-2 mt-2 focus:outline-none outline-none focus:ring-2 focus:ring-green-400"
+                        required></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-4 text-right">
+                    <button type="submit" class="inline-block bg-red-700 hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3 
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">Send</button>
+                  </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+
+
+  <footer class="text-gray-700 border-t body-font">
+    <div
+      class="container flex flex-col flex-wrap p-8 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap ">
+
+      <div class="inline-flex mx-auto">
+        <a href="#"><img src="./assets/images/logo.jpg" class=" w-16 h-16  object-cover" alt="theynetwork"></a>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-8 -mb-10 text-center md:text-left md:pl-20 md:mt-0 ">
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">
+            Links
+          </h1>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#about-us">About
+                Us</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold"
+                href="#services">Services</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#blog">Blog</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold"
+                href="#meet-the-team">Meet The Team</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold"
+                href="#contact-us">Contact Us</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">
+            Socials
+          </h1>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#">Facebook</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">Legal
+          </h1>
+          <nav class="mb-10 list-none">
+            <a href='#' class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold"
+              href="#">Privacy Policy</a>
+
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#">Terms Of
+                Service</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">Contacts
+          </h1>
+          <nav class="mb-10 list-none">
+            <li>
+              <span class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold" href="#">(+233) 54
+                798 2256</span>
+            <li>
+              <a class="text-sm text-gray-600 hover:text-theynetwork md:text-md md:font-semibold"
+                href="#">hey@theynetwork.com</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black">
+      <div class="container flex flex-col flex-wrap px-5 py-6 mx-auto sm:flex-row uppercase">
+        <p class="text-sm text-center text-gray-200 sm:text-left ">&copy; 2021 - They Network
+        </p>
+        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+          <a class="text-white hover:text-amber-200" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-4 text-white hover:text-amber-200" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-4 text-white hover:text-amber-200" href="#">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
 
 
 
- 
+  </div>
+
+
+  <script src="./main.js"></script>
+
+
 </body>
 
 </html>

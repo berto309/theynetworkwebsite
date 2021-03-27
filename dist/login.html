@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
+    <title>They Network - Login</title>
+
+    <style>
+        .body-bg {
+            background-color: #e7df9d;
+            background-image: linear-gradient(329deg, #485447 0%, #483938 74%);
+        }
+    </style>
+</head>
+<!-- <body class="antialiased"> -->
+    <!-- <div class="min-h-screen bg-gray-50 py-6 flex flex-col justify-center sm:">
+        <div class="relative py-3 md:max-w-3xl sm:mx-auto">
+            <span class="text-2xl font-light">Login in to your account</span>
+            <div class="mt-4 bg-white shadow-md rounded-lg">
+                <div class="h-2 bg-red-700 rounded-tl-md"></div>
+                <div class="px-8 py-6">
+                    <label for="username" class="block font-semibold">Username</label>
+                    <input type="username" name="Username" id="username" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-40000 focus:ring-1">
+                    <label for="password" class="block font-semibold">Password</label>
+                    <input type="password" name="password" id="password" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-40000 focus:ring-1">
+                    <div class="flex-justify-between items-base">
+                        <button type="submit" class="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-md hover:bg-indigo-600">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   
+    <!-- <footer class="sticky bottom-0 text-gray-700 border-t body-font">
+   
+    <div class="bg-black">
+      <div class="container flex flex-col flex-wrap px-5 py-6 mx-auto sm:flex-row uppercase">
+        <p class="text-sm text-center text-gray-200 sm:text-left ">&copy; 2021 - They Network
+        </p>
+        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+          <a class="text-white hover:text-amber-200" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-4 text-white hover:text-amber-200" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-4 text-white hover:text-amber-200" href="#">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer> -->
+
+
+  <body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0" style="
+  background-image: url('./assets/images/brick-wall.svg');">
+    <header class="max-w-lg mx-auto">    
+        <a href="#">
+            <h1 class="text-4xl font-bold text-white text-center tracking-wider">They Network </h1>
+        </a>
+    </header>
+
+    <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+        <section>
+            <h3 class="font-bold text-2xl text-center">Welcome</h3>
+            <p class="text-gray-600 pt-2">Log in to your account.</p>
+        </section>
+
+        <section class="mt-10">
+            <form class="flex flex-col" method="POST" action="#">
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Email</label>
+                    <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3" required>
+                </div>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
+                    <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3" required>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                      <input type="checkbox" id="remember_me" class="mr-2"><label for="remember_me">Stay signed in.</label>
+                    </div>
+                    <a href="./forgot-password.html" class="text-sm text-red-800 focus:border-red-700 hover:text-gray-800 hover:underline mb-6">Forgot your password?</a>
+                </div>
+              
+               <button type="submit" class="inline-block bg-red-700 hover:bg-red-600 
+          lg:hover:-translate-y-0.5  transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-black px-5 py-3  text-center
+          active:bg-gray-800
+          text-white rounded-lg uppercase tracking-wide">Login</button>
+  
+              </form>
+        </section>
+    </main>
+
+    <div class="max-w-lg mx-auto text-center mt-12 text-white mb-6 uppercase tracking-wide">
+       &copy;2021-TheyNetwork
+    </div>
+
+    <footer class="max-w-lg mx-auto flex justify-center text-white">
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>
